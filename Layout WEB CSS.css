@@ -1,0 +1,57 @@
+:root{
+    --navbar-height: 10vh;
+}
+* {
+    box-sizing: border-box;
+    }
+    body {
+    margin: 0;
+    }
+    /* Style untuk header */
+    .header {
+    color: white;
+    background-image:url("hed1.png");
+    padding: 25px;
+    text-align: center;
+    margin-top: var(--navbar-height);
+    width: 100%;
+    }
+
+    /* Membuat tiga kolom yang tidak sama di mana masing-masing kolom bersifat “float” terhadap yang
+    lainnya */
+    .column {
+    float: left;
+    padding: 10px;
+    }
+    /* Left and right column */
+    .column.side {
+    width: 30%;
+    background-color : whitesmoke;
+    }
+    /* Middle column */
+    .column.middle {
+    width: 70%;
+    background-color : lightyellow;
+    }
+
+    .column.middle.home {
+        width: 70%;
+        background-color : lightyellow;
+        }
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    /* Style untuk footer */
+    .footer {
+    background-color: wheat;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
